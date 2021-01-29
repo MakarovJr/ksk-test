@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получить товар</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header>
+                <h1 class="header-title">Выберите способ доставки</h1>
+            </header>
+            <main>
+                <div class="tabs">
+                    <ul class="tab-list">
+                        <li class="tab-item">
+                            <input id="tab-01" class="tab-input" type="radio" name="tab" checked>
+                            <label class="tab-label" for="tab-01">Доставка</label>
+                            <!-- <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #0096da;
+                                            fill-rule: evenodd;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="arrow_копия" data-name="arrow копия" class="cls-1"
+                                    d="M726.007,824.664l3.552-3.313h0L731,820.007l1.441,1.344h0l3.552,3.313-1.441,1.344L731,822.7l-3.552,3.312Z"
+                                    transform="translate(-726 -820)" />
+                            </svg> -->
+                            <form class="tab-content delivery-form" action="">
+                                <div class="input-block input-block-user-name">
+                                    <label class="label" for="input-user-name">ФИО</label>
+                                    <input id="input-user-name" class="input input-user-name" type="text"
+                                        placeholder="Только кирилица">
+                                </div>
+                                <div class="input-block input-block-phone">
+                                    <label class="label" for="input-phone">Телефон</label>
+                                    <input id="input-phone" class="input input-phone" type="text"
+                                        placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <div class="input-block">
+                                    <label class="label" for="input-address">Адрес доставки</label>
+                                    <input id="input-address" class="input input-address" type="text"
+                                        placeholder="Город, улица, дом">
+                                </div>
+                                <div class="input-block">
+                                    <label class="label" for="input-comment">Комментарий</label>
+                                    <textarea id="input-comment" class="input input-comment" type="text"
+                                        placeholder=""> </textarea>
+                                </div>
+                                <button class="btn">Отправить</button>
+                            </form>
+                        </li>
+                        <li class="tab-item">
+                            <input id="tab-02" class="tab-input" type="radio" name="tab">
+                            <label class="tab-label" for="tab-02">Самовывоз</label>
+                            <form class="tab-content pickup-form" action="">
+                                <div class="pickup-radio-block">
+                                    <input id="pickup-address1" class="pickup-input-address" type="radio" name="pickup">
+                                    <label class="pickup-label" for="pickup-address1">Пункт Выдачи заказов Песчаная
+                                        улица, дом 13 </label>
+                                </div>
+                                <div class="pickup-radio-block">
+                                    <input id="pickup-address2" class="pickup-input-address" type="radio" name="pickup">
+                                    <label class="pickup-label" for="pickup-address2">Пункт Выдачи заказов Подсосенский
+                                        переулок, 11 </label>
+                                </div>
+                                <div class="pickup-map">
+                                    <script type="text/javascript" charset="utf-8" async
+                                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3cab097702eca5eace0492fdf211d1de289e7c7d730ecf4ba33798b0e56dbd0f&amp;width=100%25&amp;height=441&amp;lang=ru_RU&amp;scroll=true"></script>
+                                </div>
+                                <button class="btn">Отправить</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
